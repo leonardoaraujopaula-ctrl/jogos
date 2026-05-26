@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desvie dos Carros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚗 DESVIE DOS CARROS</h1>
+    
+    <div class="info">
+      <div>Pontuação: <span id="score">0</span></div>
+      <div>Melhor: <span id="best">0</span></div>
+    </div>
 
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+    <div class="controls">
+      <button onclick="newGame()">Novo Jogo</button>
+      <p>Use ← → para mover o carro</p>
+    </div>
+
+    <div id="game-over" class="game-over">
+      <h2>Game Over</h2>
+      <p>Pontuação: <strong id="final-score">0</strong></p>
+      <button onclick="newGame()">Jogar Novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
